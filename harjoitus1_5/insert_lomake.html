@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Lomake</title>
+</head>
+<body>
+    <h1>Syötä viesti</h1>
+    <form action="insert.php" method="post">
+        <label for="pvm">Päivämäärä:</label>
+        <input type="date" name="pvm" id="pvm" required><br><br>
+        
+        <label for="nimi">Nimi:</label>
+        <input type="text" name="nimi" id="nimi" required><br><br>
+        
+        <label for="email">Sähköposti:</label>
+        <input type="email" name="email" id="email" required><br><br>
+        
+        <label for="viesti">Viesti:</label>
+        <textarea name="viesti" id="viesti" required></textarea><br><br>
+        
+        <input type="submit" value="Lähetä">
+    </form>
+    
+</body>
+</html>
