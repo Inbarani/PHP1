@@ -1,0 +1,8 @@
+8Nimi: dddd
+Sähköposti: inba@gmail.com
+Puhelinnumero: 454545
+
+Nimi: xxx
+Sähköposti: ddd@gmail.com
+Puhelinnumero: 9876543
+

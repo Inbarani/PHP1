@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomaketiedon käsittely php:n avulla</title>
+    <!--Arvosanani tästä on 8 pistettä-->
+</head>
+<body>
+    <form method="post" action="seuraava.php" >
+        Nimi:
+        <br><input type="text" name="nimi">
+        <br>
+        Kirjoita viesti:
+        <br>
+        <textarea name="viesti" rows="10" cols="50"></textarea>
+        <br>
+        <!--<input type="submit" name="submit" value="Lähetä">
+        <br>-->
+        Lempiväri:
+        <br>
+        <input type="radio" name="vari" value="punainen">punainen
+        <br>
+        <input type="radio" name="vari" value="sininen">sininen
+        <br>
+        <input type="radio" name="vari" value="vihreä">vihreä
+        <br>
+        <br>
+        
+        Harrastukset:
+        <br>
+        <input type="checkbox" name="harrastukset[]" value="jalkapallo">jalkapallo
+        <br>
+        <input type="checkbox" name="harrastukset[]" value="sulkapallo">sulkapallo
+        <br>
+        <input type="checkbox" name="harrastukset[]" value="uinti">uinti
+        <br>
+        <input type="checkbox" name="harrastukset[]" value="Musiikki"> Musiikki
+        <br>
+        <input type="checkbox" name="harrastukset[]" value="Tanssi"> Tanssi
+        <br>
+        <br><br>
+        
+        Kulkuneuvot:
+        <br>
+        <select name="kulkuneuvo[]" multiple size="2">
+            <option value="auto">Auto</option>
+            <option value="bussi">Bussi</option>
+            <option value="juna">Juna</option>
+            <option value="moottoripyörä">Moottoripyörä</option>           
+        </select>
+        <br><br>
+        <input type="submit" name="submit" value="Lähetä"> 
+        <br>
+              
+
+        </form>
+        
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomake3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Syötä tiedot:</h1>
+    <!--Arvioni tälle tehtäväkoodille on 10-->
+    <form action="process.php" method="post">
+        <label for="nimi">Nimi:</label>
+        <input type="text" id="nimi" name="nimi" required>
+        <br><br>
+
+        <label for="sahkoposti">Sähköposti:</label>
+        <input type="email" id="sahkoposti" name="sahkoposti" required>
+        <br><br>
+
+        <label for="puhelin">Puhelinnumero:</label>
+        <input type="tel" id="puhelin" name="puhelin" required>
+        <br><br>
+
+        <input type="submit" value="Lähetä">
+        
+    </form> 
+    <div id="saveStatus"></div>
+    <script>
+        // Function to get query parameter by name from URL
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        
+        // Get the message from the URL
+        var message = getQueryParam("message");
+        
+        // Get the saveStatus div
+        var saveStatusDiv = document.getElementById("saveStatus");
+        
+        // Check if there's a message and display it in the saveStatus div
+        if (message) {
+            saveStatusDiv.textContent = message;
+        
+            // Set a timeout to clear the message after a specific duration (e.g., 3 seconds)
+            setTimeout(function() {
+                saveStatusDiv.textContent = "";
+            }, 3000); // 3000 milliseconds (3 seconds)
+        }
+        </script>
+        
+    
+   
+
+       
+</body>
+</html>
